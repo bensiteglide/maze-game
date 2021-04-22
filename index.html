@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ 'css/maze.css' | asset_url }}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="sg-hero sg-form-01" style="height: 100%; background: black;">
+      <div class="container">
+        <div style="border-radius: 28%; background: black;" class="bg-black justify-content-center p-md-5 p-3 py-5 row sg-card">
+          <div class="col-12">
+            <h3 class="text-center">Maze Generator</h3>
+            <form style="background: url('{{ 'TESS.PNG' | asset_url }}'); background-size:cover;" class="sg-form p-0 p-md-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-4 sg-form-group">
+                    <label class="text-white" for="sg-contact-01a-name">Width / Height</label>
+                    <input value="600" type="text" id="sg-1" class="form-control sg-form-control" name="Quam" placeholder="600">
+                  </div>
+                </div>          
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="form-group mb-4 sg-form-group">
+                    <label class="text-white" for="sg-contact-01a-name">Rows</label>
+                    <input value="10" type="text" id="sg-2" class="form-control sg-form-control" name="Integer nibh" placeholder="20">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="form-group mb-4 sg-form-group">
+                    <label class="text-white" for="sg-contact-01a-name">Colunms</label>
+                    <input value="10" type="text" id="sg-3" class="form-control sg-form-control" name="Non amet in" placeholder="20">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="form-group mb-4 sg-form-group">
+                    <label class="text-white" for="form_field_1_4">Background Color</label>
+                    <select class="form-control sg-form-control" id="form_field_1_4">
+                      <option class="text-white" style="background-color: black" value="black">Black</option>
+                      <option class="text-black" style="background-color: white" value="white">White</option>
+                      <option class="text-white" style="background-color: blue" value="blue">Blue</option>
+                      <option class="text-white" style="background-color: red" value="red">Red</option>
+                      <option class="text-white" style="background-color: grey " value="grey">Grey</option>
+                      <option class="text-white" style="background-color: orange" value="orange">Orange</option>
+                      <option class="text-white" style="background-color: purple " value="purple">Purple</option>
+                      <option class="text-white" style="background-color: yellow" value="yellow">Yellow</option>
+                      <option class="text-white" style="background-color: gold" value="gold">Gold</option>
+                      <option class="text-white" style="background-color: pink" value="pink">Pink</option>
+                      <option class="text-white" style="background-color: green" value="green">Green</option>
+                      <option class="text-black" style="background-color: lightblue" value="lightblue">Light Blue</option>
+                      <option class="text-black" style="background-color: lightred" value="lightred">Light Red</option>
+                      <option class="text-black" style="background-color: lightgrey" value="lightgrey">Light Grey</option>
+                      <option class="text-black" style="background-color: lightgreen" value="lightgreen">Light Green</option>
+                      <option class="text-black" style="background-color: lightyellow" value="lightyellow">Light Yellow</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="form-group mb-4 sg-form-group">
+                    <label class="text-white" for="form_field_1_5">Line Color</label>
+                    <select class="form-control sg-form-control" id="form_field_1_5">
+                      <option class="text-black" style="background-color: white" value="white">White</option>
+                      <option class="text-white" style="background-color: black" value="black">Black</option>
+                      <option class="text-white" style="background-color: blue" value="blue">Blue</option>
+                      <option class="text-white" style="background-color: red" value="red">Red</option>
+                      <option class="text-white" style="background-color: grey " value="grey">Grey</option>
+                      <option class="text-white" style="background-color: orange" value="orange">Orange</option>
+                      <option class="text-white" style="background-color: purple " value="purple">Purple</option>
+                      <option class="text-white" style="background-color: yellow" value="yellow">Yellow</option>
+                      <option class="text-white" style="background-color: gold" value="gold">Gold</option>
+                      <option class="text-white" style="background-color: pink" value="pink">Pink</option>
+                      <option class="text-white" style="background-color: green" value="green">Green</option>
+                      <option class="text-black" style="background-color: lightblue" value="lightblue">Light Blue</option>
+                      <option class="text-black" style="background-color: lightred" value="lightred">Light Red</option>
+                      <option class="text-black" style="background-color: lightgrey" value="lightgrey">Light Grey</option>
+                      <option class="text-black" style="background-color: lightgreen" value="lightgreen">Light Green</option>
+                      <option class="text-black" style="background-color: lightyellow" value="lightyellow">Light Yellow</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content-center row">
+                <div class="col-12 col-md-6">
+                  <button type="button" onClick="createMaze();" role="button" class="btn btn-primary sg-btn sg-btn-primary btn-lg sg-btn-lg w-100">Generate</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <canvas class="maze"></canvas>
+    <div class="container final">
+      <h1>Congratulations! You've finished the Maze!</h1>
+      <button onClick="reload()" type="button" role="button" class="btn btn-primary sg-btn sg-btn-primary btn-lg sg-btn-lg w-100">Replay</button>
+    </div>
+    
+    <footer>
+      <script>function reload() {location.reload();}</script>
+      <script src="{{ 'js/maze.js' | asset_url }}"></script>
+      <script src="{{ 'js/maze-settings.js' | asset_url }}"></script>
+      <style>
+        .final {
+          display: none
+        }
+        label,h3 {
+          color: white !important;
+          font-weight: bolder !important;
+        }
+      </style>
+    </footer>
+  </body>
+</html>
